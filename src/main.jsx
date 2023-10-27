@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'     //RouterProvider component use router prop.... and To create router we import one method createBrowserRouter which take array of objects as parameter
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'     //RouterProvider component use router prop.... and To create router we import one method "createBrowserRouter" which take array of objects as parameter
 
 import Route from './Route.jsx'
 import Home from './Components/Home/Home.jsx'

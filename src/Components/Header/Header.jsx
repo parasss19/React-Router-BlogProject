@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'         //Link is used as alternate of a tag but here is one benefit with Link that is it doesnt reload the page as a tag reload the whole page so its better to use Link ....Navlink is also similar but with more functionality of adding class inside callback
+import { Link, NavLink } from 'react-router-dom'         //Link is used as alternate of "a" tag but here is one benefit with Link that is it doesnt reload the page as "a" tag reload the whole page so its better to use Link ....Navlink is also similar but with more functionality of adding class inside callback
 
 export default function Header() {
   return (

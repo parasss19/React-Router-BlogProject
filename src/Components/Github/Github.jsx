@@ -9,7 +9,7 @@ import { useLoaderData } from 'react-router-dom'  //for using loader
     //use useState to update the state
     const [data, setData] = useState([])
 
-    // here we use github api get info 
+    // here we use github api to get info 
     useEffect(() => {
         fetch('https://api.github.com/users/parasss19')
         .then((res) => res.json())
