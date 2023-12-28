@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'         //Link is used as alternate of "a" tag but here is one benefit with Link that is it doesnt reload the page as "a" tag reload the whole page so its better to use Link ....Navlink is also similar but with more functionality of adding class inside callback
+import { Link, NavLink } from 'react-router-dom'         //Link is used as alternate of "a" tag but here is one benefit with Link that is it does not reload the page as "a" tag reload the whole page so its better to use Link ....Navlink is also similar but with more functionality of adding class inside callback
 
 export default function Header() {
   return (
@@ -9,7 +9,10 @@ export default function Header() {
     <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
 
-            <Link to="/" className="flex items-center">
+            {/* we use "to"  instead of "href" */}
+            <Link 
+                to="/" 
+                className="flex items-center">
                 <img
                     src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
                     className="mr-3 h-12"
@@ -31,7 +34,7 @@ export default function Header() {
                         {/* Here we pass classes inside callback so that we get isActive variable which is very useful(like agar hum home par h toh uss link ka color red ho) */}
                         <NavLink 
                             to="/"
-                            className={({isActive}) =>
+                            className= {({isActive}) =>
                                 `block py-2 pr-4 pl-3 duration-200 border-b ${isActive? "text-orange-700" : "text-gray-700"} border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                             }
                         >

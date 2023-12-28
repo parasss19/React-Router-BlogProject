@@ -6,7 +6,7 @@ export default function User() {
   
   return (
     <div className='bg-slate-900 text-white text-center p-6 text-2xl'>
-      User : {userid}
+      User : {userid.toUpperCase()}
     </div>
   )
 }
